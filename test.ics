@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//dvrpc//ical-generator//EN
+METHOD:REQUEST
+TIMEZONE-ID:America/New_York
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:wrh7@dvrpc.org
+SEQUENCE:0
+DTSTAMP:20191003T011909Z
+DTSTART:20191009T140000Z
+DTEND:20191009T160000Z
+SUMMARY:Goods Movement Task Force
+LOCATION:8th Floor\, American College of Physicians Building | DVRPC Main 
+ Conference Room\, 190 North Independence Mall West\, Philadelphia\, PA 191
+ 06
+DESCRIPTION:Agenda \n Item 1 \n item 2
+ORGANIZER;CN="Mike Ruane":mailto:mruane@dvrpc.org
+URL;VALUE=URI:www.dvrpc.org
+END:VEVENT
+END:VCALENDAR

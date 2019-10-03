@@ -1,0 +1,16 @@
+{
+  "name": "dvrpc-ics",
+  "version": "1.0.0",
+  "description": "Simple tool to generate iCal for events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-saver": "^2.0.2",
+    "ical-generator": "^1.8.1",
+    "moment": "^2.24.0"
+  }
+}

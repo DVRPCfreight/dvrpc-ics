@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//dvrpc//ical-generator//EN
+METHOD:REQUEST
+TIMEZONE-ID:America/New_York
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:na8n@dvrpc.org
+SEQUENCE:0
+DTSTAMP:20191003T024034Z
+DTSTART:20191009T140000Z
+DTEND:20191009T160000Z
+SUMMARY:Delaware Valley Goods Movement Task Force
+LOCATION:8th Floor\, American College of Physicians Building | DVRPC Main 
+ Conference Room\, 190 North Independence Mall West\, Philadelphia\, PA 191
+ 06
+DESCRIPTION:Please join us for our quarterly meeting featuring the followi
+ ng presentations and notable presenters:\n1. Implementing New Jersey’s Sta
+ tewide Freight Plan - Stephen Chiaramonte\, WSP USA\n2. Federal Motor Carr
+ ier Safety Administration - Timothy Cotter\, FMCSA\n3. Rail Freight and th
+ e Commonwealth's Economy - Steve Panko\, Pennsylvania Department of Transp
+ ortation\n4. PES: A City of Philadelphia Perspective - Chris Rupe\, City o
+ f Philadelphia\n\nNote: Coffee available at 9:30 AM. Lunch will be served 
+ following the meeting.\n\nFor full updated agenda: https://www.dvrpc.org/C
+ ommittees/DVGMTF/9668
+ORGANIZER;CN="Michael Ruane":mailto:mruane@dvrpc.org
+URL;VALUE=URI:www.dvrpc.org
+END:VEVENT
+END:VCALENDAR

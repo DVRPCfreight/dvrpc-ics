@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Calender Event Builder</title>
+  <meta name="description" content="Calender Event Builder">
+  <meta name="author" content="SitePoint">
+
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+
+
+</head>
+
+<body>
+        
+        <div class="container">
+
+        <div class="row">
+            <h1>Event ICS Generator</h1>
+            <p>This tool is intended for use to create .ics (iCal) files for attachment to meeting invites. The resulting file will be usable by all major productivity suites.</p>
+            <form id="event-creator" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Committee/Event Name" id="summary" name="summary" type="text" class="validate" required="" aria-required="true">
+                        <label for="summary">Event Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Address of event" id="location" name="location" type="text" class="validate" required="" aria-required="true">
+                        <label for="location">Location</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="www.dvrpc.org" id="url" name="url" type="text" required="" aria-required="true">
+                        <label for="url">Event URL</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="First Last Name" id="organizer" name="organizer" type="text" class="validate" required="" aria-required="true">
+                        <label for="organizer">Organizer Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="name@dvrpc.org" id="email" name="email" type="email" class="validate" required="" aria-required="true">
+                        <label for="email">Organizer Email</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <label for="date">Date</label>
+                        <input type="text" id="date" name="date" class="datepicker" required="" aria-required="true">
+                    </div>
+                    <div class="input-field col s4">
+                        <label for="start">Start Time</label>
+                        <input type="text" id="start" name="start" class="timepicker" required="" aria-required="true">
+                    </div>
+                    <div class="input-field col s4">
+                        <label for="end">End Time</label>
+                        <input type="text" id="end" name="end" class="timepicker" required="" aria-required="true">
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="desc" name="desc" class="materialize-textarea" required="" aria-required="true"></textarea>
+                        <label for="desc">Event Description/Agenda</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="calendar-date" id="fn" name="fn" type="text" class="validate" required="" aria-required="true">
+                        <label for="fn">Filename for .ics download</label>
+                    </div>
+                    
+                </div>
+                <a id="generate" class="btn waves-effect waves-light">Generate</a>
+            </form>
+            </div>
+        </div>
+        
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var elems = document.querySelectorAll('.datepicker');
+                    var options = {};
+                    var instances = M.Datepicker.init(elems, options);
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    var elems = document.querySelectorAll('.timepicker');
+                    var options = {};
+                    var instances = M.Timepicker.init(elems, options);
+                });
+            </script>
+            <script src="js/bundle.js"></script>
+
+</body>
+</html>
